@@ -1,0 +1,50 @@
+/* global.css */
+
+/* --- Tipografía y colores corporativos --- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* --- Menú común --- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #004aad;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- Pie de página --- */
+footer {
+  background: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+}
+
+/* --- Contenedor común --- */
+.container {
+  max-width: 1100px;
+  margin: 80px auto 0 auto;
+  padding: 0 20px;
+}

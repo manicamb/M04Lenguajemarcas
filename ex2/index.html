@@ -1,29 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 001 - CSS Basico</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <title>Gimnasio Energía - Inicio</title>
+  <link rel="stylesheet" href="global.css">
+  <style>
+    /* Estilos específicos de la página de inicio */
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    .hero a {
+      display: inline-block;
+      background: white;
+      color: #004aad;
+      padding: 10px 25px;
+      margin-top: 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .collections {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card span {
+      background: #004aad;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.8em;
+    }
+
+    .benefits {
+      display: flex;
+      justify-content: space-around;
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-    <h1 id="titulo">Bienvenido a CSS basico.</h1>
 
-    <p class="texto-importante">Este es un parrafo con la clase texto-importante.</p>
-    
-    <p class="grande negrita subrayado">Este es un parrafo con multiples clases.</p>
+  <header>
+    <h2>Gimnasio Energía</h2>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
 
-    <ul>
-        <li class="rojo">Primer elemento</li>
-        <li class="verde">Segundo elemento</li>
-        <li class="azul">Tercer elemento</li>
-    </ul>
+  <div class="hero">
+    <h1>Activa tu cuerpo, potencia tu mente</h1>
+    <p>Entrena con nosotros y vive más fuerte, más sano, más feliz.</p>
+    <a href="productos.html">Descubre nuestros planes</a>
+  </div>
 
-    <p>
-        <a href="https://www.wikipedia.org" target="_blank">Visita la Wikipedia</a>
-    </p>
+  <main class="container">
+    <section class="collections">
+      <div class="card">
+        <h3>Clases dirigidas</h3>
+        <p>Yoga, spinning, zumba y mucho más. Sesiones diarias con instructores profesionales.</p>
+        <span>#Fitness</span> <span>#Energía</span>
+      </div>
+      <div class="card">
+        <h3>Entrenamiento personal</h3>
+        <p>Asesoramiento individualizado para alcanzar tus objetivos con resultados reales.</p>
+        <span>#PersonalTrainer</span>
+      </div>
+      <div class="card">
+        <h3>Zona wellness</h3>
+        <p>Relájate después del entrenamiento con sauna, masajes y espacios zen.</p>
+        <span>#Relax</span>
+      </div>
+    </section>
 
-    <p>
-        <a href="contacto.html">Ir a la página de contacto</a>
-    </p>
+    <div class="benefits">
+      <div>🏋️‍♂️ Envío 48h</div>
+      <div>🔄 Cambios gratuitos</div>
+      <div>💳 Pago seguro</div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Gimnasio Energía · info@gimnasioenergia.es
+  </footer>
+
 </body>
 </html>
